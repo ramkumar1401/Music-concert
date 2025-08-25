@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Booking Confirmation - Music Paradise</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="confirmation-container">
+    <div class="ribbon" id="ribbon" role="alert" aria-live="polite">
+      Booking Confirmed!
+    </div>
+    <h2 id="confirmationMsg"></h2>
+    <p>
+      Thank you for choosing Music Paradise. We're excited to see you at the
+      event!
+    </p>
+    <button onclick="window.location.href='index.html';" class="cta-button">
+      Back to Home
+    </button>
+  </div>
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      const bookingDataJSON = localStorage.getItem("bookingData");
+      if (!bookingDataJSON) {
+        document.getElementById("confirmationMsg").innerText =
+          "No booking information found.";
+        return;
+      }
+      const bookingData = JSON.parse(bookingDataJSON);
+      document.getElementById("confirmationMsg").innerText = `Hello ${
+        bookingData.name
+      }, your booking of ${bookingData.quantity} ${bookingData.ticketType} ticket${
+        bookingData.quantity > 1 ? "s" : ""
+      } is confirmed for ${bookingData.dateStr} at ${bookingData.timeStr}.`;
+      localStorage.removeItem("bookingData");
+    });
+  </script>
+</body>
+</html>

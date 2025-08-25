@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Music Paradise - Booking & OTP</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+</head>
+<body>
+  <div id="loading-screen">
+    <div id="loading-logo"></div>
+  </div>
+
+  <nav class="navbar">
+    <div class="logo">
+      <img src="./images/logo2.jpg" alt="Music Paradise Logo" />
+      <span>Music Paradise</span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#background-video" class="nav-anchor">Home</a></li>
+      <li><a href="#artistsSection" class="nav-anchor">Artists</a></li>
+      <li><a href="#pricingSection" class="nav-anchor">Pricing</a></li>
+      <li><a href="#bookingForm" class="nav-anchor">Book</a></li>
+      <li><a href="#contactSection" class="nav-anchor">Contact</a></li>
+    </ul>
+    <div
+      class="hamburger"
+      id="hamburger"
+      aria-label="Toggle menu"
+      role="button"
+      tabindex="0"
+    >
+      <i class="fas fa-bars"></i>
+    </div>
+  </nav>
+
+  <section class="hero-section" id="background-video">
+    <video autoplay muted loop id="background-video-element" playsinline>
+      <source src="./images/video.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <div class="hero-content">
+      <h1 class="rainbow-text">Join The Vibe</h1>
+      <p>Experience the thrill of music, dance, and joy like never before.</p>
+      <a href="#bookingForm" class="cta-button">Get Tickets</a>
+    </div>
+  </section>
+
+  <section class="artists-section" id="artistsSection">
+    <h2 class="rainbow-text">Featured Artists</h2>
+    <div class="artist-grid">
+      <div class="artist-card curved-border">
+        <img src="./images/img1.jpg" alt="DJ Fusion" />
+        <div class="artist-info">
+          <h3>DJ Fusion</h3>
+          <p>EDM & Trance</p>
+          <p>
+            One of the most dynamic and energetic EDM performers who blends
+            pulsating rhythms with melodic trance vibes.
+          </p>
+          <div class="social-links">
+            <a
+              href="https://facebook.com/djfusion"
+              target="_blank"
+              aria-label="Facebook"
+              class="no-underline"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a
+              href="https://twitter.com/djfusion"
+              target="_blank"
+              aria-label="Twitter"
+              class="no-underline"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a
+              href="https://instagram.com/djfusion"
+              target="_blank"
+              aria-label="Instagram"
+              class="no-underline"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="artist-card curved-border">
+        <img src="./images/img2.jpg" alt="MC Blaster" />
+        <div class="artist-info">
+          <h3>MC Blaster</h3>
+          <p>Rap & Hip-Hop</p>
+          <p>
+            Known for his sharp lyrical prowess and hype-driven stage
+            presence.
+          </p>
+          <div class="social-links">
+            <a
+              href="https://facebook.com/mcblaster"
+              target="_blank"
+              aria-label="Facebook"
+              class="no-underline"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a
+              href="https://twitter.com/mcblaster"
+              target="_blank"
+              aria-label="Twitter"
+              class="no-underline"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a
+              href="https://instagram.com/mcblaster"
+              target="_blank"
+              aria-label="Instagram"
+              class="no-underline"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="artist-card curved-border">
+        <img src="./images/img3.jpg" alt="Luna Beat" />
+        <div class="artist-info">
+          <h3>Luna Beat</h3>
+          <p>House & Chill</p>
+          <p>Master of smooth beats with a soulful electronic touch.</p>
+          <div class="social-links">
+            <a
+              href="https://facebook.com/lunabeat"
+              target="_blank"
+              aria-label="Facebook"
+              class="no-underline"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a
+              href="https://twitter.com/lunabeat"
+              target="_blank"
+              aria-label="Twitter"
+              class="no-underline"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a
+              href="https://instagram.com/lunabeat"
+              target="_blank"
+              aria-label="Instagram"
+              class="no-underline"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="artist-card curved-border">
+        <img src="./images/img4.jpg" alt="Electro Wave" />
+        <div class="artist-info">
+          <h3>Electro Wave</h3>
+          <p>Electronic</p>
+          <p>
+            Specializes in energetic electronic beats with futuristic
+            soundscapes.
+          </p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook" class="no-underline"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" aria-label="Twitter" class="no-underline"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="#" aria-label="Instagram" class="no-underline"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="artist-card curved-border">
+        <img src="./images/img5.jpg" alt="Soulful Melody" />
+        <div class="artist-info">
+          <h3>Soulful Melody</h3>
+          <p>Jazz & Blues</p>
+          <p>
+            Renowned for breathtaking jazz performances blended with
+            contemporary blues.
+          </p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook" class="no-underline"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" aria-label="Twitter" class="no-underline"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="#" aria-label="Instagram" class="no-underline"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pricing-section" id="pricingSection">
+    <h2 class="rainbow-text">Ticket Pricing</h2>
+    <div class="pricing-container">
+      <div class="pricing-card floating tilt-3d delay-1">
+        <h3 class="rainbow-text">General</h3>
+        <p class="price">₹3,999</p>
+        <ul>
+          <li>Access to all music zones</li>
+          <li>Free merchandise</li>
+          <li>Open seating</li>
+        </ul>
+      </div>
+      <div class="pricing-card floating tilt-3d delay-2">
+        <h3 class="rainbow-text">VIP</h3>
+        <p class="price">₹11,999</p>
+        <ul>
+          <li>Front-row seats</li>
+          <li>Backstage pass</li>
+          <li>Meet & Greet</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="booking-section" id="bookingForm">
+    <h2 class="rainbow-text">Book Your Seat</h2>
+    <form id="bookingFormElement" novalidate>
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required autocomplete="name" />
+
+      <label for="phone">Phone Number (with country code):</label>
+      <input
+        type="tel"
+        id="phone"
+        name="phone"
+        placeholder="+91-9876543210"
+        required
+        autocomplete="tel"
+      />
+
+      <label for="ticketType">Ticket Type:</label>
+      <select id="ticketType" name="ticketType" required>
+        <option value="General">General - ₹3,999</option>
+        <option value="VIP">VIP - ₹11,999</option>
+      </select>
+
+      <label for="quantity">Number of Tickets:</label>
+      <input
+        type="number"
+        id="quantity"
+        name="quantity"
+        min="1"
+        max="10"
+        value="1"
+        required
+      />
+
+      <div
+        id="calculatedPrice"
+        style="margin-bottom: 1rem; font-weight: bold; font-size: 1.1rem"
+      >
+        Total Price: ₹3999
+      </div>
+
+      <label for="otp" id="otpLabel" style="display: none">Enter OTP:</label>
+      <input
+        type="text"
+        id="otp"
+        name="otp"
+        maxlength="4"
+        autocomplete="one-time-code"
+        style="display: none"
+      />
+
+      <button type="submit" class="cta-button" id="bookNowBtn">Book Now</button>
+      <button
+        type="button"
+        class="cta-button"
+        id="verifyOtpBtn"
+        style="display: none"
+      >
+        Verify OTP
+      </button>
+    </form>
+
+    <form id="paymentForm" style="display: none; margin-top: 20px">
+      <h3>Payment Details (mock)</h3>
+      <label for="cardName">Cardholder Name:</label>
+      <input
+        type="text"
+        id="cardName"
+        name="cardName"
+        placeholder="John Doe"
+        required
+      />
+
+      <label for="cardNumber">Card Number:</label>
+      <input
+        type="text"
+        id="cardNumber"
+        name="cardNumber"
+        placeholder="1234 5678 9012 3456"
+        maxlength="19"
+        required
+      />
+
+      <label for="expiry">Expiry Date:</label>
+      <input type="month" id="expiry" name="expiry" required />
+
+      <label for="cvv">CVV:</label>
+      <input type="password" id="cvv" name="cvv" maxlength="4" required />
+
+      <button type="submit" class="cta-button" id="confirmBookingBtn">
+        Confirm Booking & Pay
+      </button>
+    </form>
+
+    <p id="otpMessage" role="alert" aria-live="polite" style="margin-top: 1rem"></p>
+    <p id="paymentMessage" role="alert" aria-live="polite"></p>
+  </section>
+
+  <section class="contact-section" id="contactSection">
+    <h2 class="rainbow-text">Contact Us</h2>
+    <form id="contactForm" novalidate>
+      <label for="contactName">Name:</label>
+      <input type="text" id="contactName" name="contactName" required />
+
+      <label for="contactEmail">Email:</label>
+      <input type="email" id="contactEmail" name="contactEmail" required />
+
+      <label for="contactMessage">Message:</label>
+      <textarea id="contactMessage" name="contactMessage" rows="5" required></textarea>
+
+      <button type="submit" class="cta-button">Send Message</button>
+      <p
+        id="contactResponse"
+        role="alert"
+        aria-live="polite"
+        style="margin-top: 1rem"
+      ></p>
+    </form>
+  </section>
+
+  <footer>
+    <div class="footer-video-container">
+      <video autoplay muted loop id="footer-background-video" playsinline>
+        <source src="footer-background.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="footer-content">
+        <div class="social-icons">
+          <a
+            href="https://facebook.com"
+            target="_blank"
+            rel="noopener"
+            aria-label="Facebook"
+            class="social-facebook no-underline"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener"
+            aria-label="Instagram"
+            class="social-instagram no-underline"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            href="https://twitter.com"
+            target="_blank"
+            rel="noopener"
+            aria-label="Twitter"
+            class="social-twitter no-underline"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a
+            href="https://wa.me/"
+            target="_blank"
+            rel="noopener"
+            aria-label="WhatsApp"
+            class="social-whatsapp no-underline"
+            ><i class="fab fa-whatsapp"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
